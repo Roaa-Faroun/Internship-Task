@@ -1,0 +1,29 @@
+@mixin align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin btn{
+    margin-top: 30px;
+    width:200px;
+    height:50px;
+    background-color: $theme-color;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    @include align;
+    justify-content: space-around;
+}
+
+@mixin pos{
+    position: absolute;
+    content: '';
+}
+
+@mixin centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
